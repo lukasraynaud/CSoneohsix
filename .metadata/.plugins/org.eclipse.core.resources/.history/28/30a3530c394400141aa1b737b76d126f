@@ -1,0 +1,43 @@
+/**
+ * 
+ */
+
+/**
+ * @author lraynaud
+ * Goal: to create a quiz to see which jazz artist you are
+ * Will utilize conditionals, user input, and text processing methods
+ * @param Sax Score
+ * @param Trumpet Score
+ * @param Bass Score
+ * @param Drum Score
+ */
+ import java.util.*;
+ 
+public class Quiz {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// create scanner //
+		Scanner console = new Scanner(System.in);
+		// prompt first question // 
+		System.out.println("What kind of music would you rather listen to?");
+		System.out.println("a. Smooth Jazz"
+				+ "b. Orchestral"
+				+ "c. Techno"
+				+ "d. Tribal Dance Music");
+	}
+}
+public static void questionOne(String[] args) {
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
