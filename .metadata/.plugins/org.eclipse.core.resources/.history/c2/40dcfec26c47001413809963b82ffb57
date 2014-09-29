@@ -136,7 +136,7 @@ drums++;}
 	else if (trumpet > sax && trumpet > bass && trumpet > drums ){ System.out.println("You're Miles Davis!");}
 	else if (bass > sax && bass > trumpet && bass > drums ){ System.out.println("You're Ron Carter!");}
 	else if (drums > sax && drums > trumpet && drums > bass ){System.out.println("You're Brian Blade!");}
-	else if (sax == trumpet || sax == bass || sax == drums || trumpet == bass || trumpet == drums || bass == drums){System.out.println("You're Art Blakley!");
+	else if (sax != trumpet || sax != bass || sax != drums || trumpet != bass || trumpet != drums || bass != drums){System.out.println("You're Art Blakley!");
 	
 	}
 }
