@@ -31,8 +31,8 @@ public class Quiz {
 		int bass = 0;
 
 		int drums = 0;
-
-
+		
+		
 
 		// create scanner //
 
@@ -50,32 +50,31 @@ public class Quiz {
 	public static void question1(Scanner console, int sax, int trumpet, int bass, int drums) {	
 
 		// prompt first question // 
-
+		
 
 		// interpret user input, and adjust parameters to tally score//
-
+		
 		int answer = 0;
 		boolean first = true;
+		
+		while(  answer <= 0 || answer > 4){
+				
+			System.out.println("What kind of music would you rather listen to?");
 
-		while(answer <= 0 || answer > 4){if(!first){ System.out.println("Try again Dinugs");
-		System.out.println("   ");}
+			System.out.println("1. Smooth Jazz  "
+					+ "2. Orchestral  "
+					+ "3. Techno  "
+					+ "4. Tribal Dance Music  ");
+			System.out.println(      );
 
-		System.out.println("What kind of music would you rather listen to?");
-
-		System.out.println("1. Smooth Jazz  "
-				+ "2. Orchestral  "
-				+ "3. Techno  "
-				+ "4. Tribal Dance Music  ");
-		System.out.println(      );
-
-		System.out.println(" please enter 1, 2, 3, or 4");
-		if (console.hasNextInt()){ answer = console.nextInt();}
-		else { console.next();}
+			System.out.println(" please enter 1, 2, 3, or 4");
+			if (console.hasNextInt()){ answer = console.nextInt();}
+		
 		first = false;
 		}
-
-
-
+	
+		
+		
 		if (answer == 1) {
 			sax++; }
 
@@ -98,12 +97,6 @@ public class Quiz {
 
 	public static void question2(Scanner console, int sax, int trumpet, int bass, int drums) {
 
-		int answer = 0;
-		boolean first = true;
-
-		while(answer <= 0 || answer > 4){if(!first){ System.out.println("Try again Dinugs");
-		System.out.println("   ");}
-
 		System.out.println("What do you do when you listen to music?");
 
 		System.out.println("1. Whistle to myself  "
@@ -115,12 +108,7 @@ public class Quiz {
 
 		System.out.println(" please enter 1, 2, 3, or 4");
 
-		if (console.hasNextInt()){ answer = console.nextInt();}
-		else { console.next();}
-		first = false;
-		}
-
-
+		int answer = console.nextInt();
 
 		if (answer == 1) {
 			sax++; }
@@ -141,12 +129,6 @@ public class Quiz {
 	}
 	public static void question3(Scanner console, int sax, int trumpet, int bass, int drums) {
 
-		int answer = 0;
-		boolean first = true;
-
-		while(answer <= 0 || answer > 4){if(!first){ System.out.println("Try again Dinugs");
-		System.out.println("   ");}
-
 		System.out.println("If you could live in one state, which would it be?");
 
 		System.out.println("1. New York  "
@@ -157,13 +139,8 @@ public class Quiz {
 		System.out.println(      );
 
 		System.out.println(" please enter 1, 2, 3, or 4");
-		if (console.hasNextInt()){ answer = console.nextInt();}
-		else { console.next();}
-		first = false;
-		}
 
-
-
+		int answer = console.nextInt();
 
 		if (answer == 1) {
 			sax++; }
@@ -181,13 +158,6 @@ public class Quiz {
 	// asks final question, tallies parameters, and checks for largest parameter, conditions for a tie between 2 or more variables //
 	public static void question4(Scanner console, int sax, int trumpet, int bass, int drums) {
 
-
-		int answer = 0;
-		boolean first = true;
-
-		while(answer <= 0 || answer > 4){if(!first){ System.out.println("Try again Dinugs");
-		System.out.println("   ");}
-
 		System.out.println("What do you do to relax?");
 
 		System.out.println("1. Heroine  "
@@ -197,14 +167,7 @@ public class Quiz {
 		System.out.println(      );
 		System.out.println(" please enter 1, 2, 3, or 4");
 
-		if (console.hasNextInt()){ answer = console.nextInt();}
-		else { console.next();}
-		first = false;
-		}
-
-
-
-
+		int answer = console.nextInt();
 
 		if (answer == 1) {
 			sax++; }

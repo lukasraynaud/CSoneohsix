@@ -70,8 +70,8 @@ public class Quiz {
 
 		System.out.println(" please enter 1, 2, 3, or 4");
 		if (console.hasNextInt()){ answer = console.nextInt();}
-		else { console.next();}
-		first = false;
+		if (!console.hasNextInt()){first = false;}
+		
 		}
 
 
@@ -116,7 +116,7 @@ public class Quiz {
 		System.out.println(" please enter 1, 2, 3, or 4");
 
 		if (console.hasNextInt()){ answer = console.nextInt();}
-		else { console.next();}
+
 		first = false;
 		}
 
@@ -158,7 +158,7 @@ public class Quiz {
 
 		System.out.println(" please enter 1, 2, 3, or 4");
 		if (console.hasNextInt()){ answer = console.nextInt();}
-		else { console.next();}
+
 		first = false;
 		}
 
@@ -198,7 +198,7 @@ public class Quiz {
 		System.out.println(" please enter 1, 2, 3, or 4");
 
 		if (console.hasNextInt()){ answer = console.nextInt();}
-		else { console.next();}
+
 		first = false;
 		}
 
