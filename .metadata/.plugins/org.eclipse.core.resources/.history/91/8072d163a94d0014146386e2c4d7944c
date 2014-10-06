@@ -134,7 +134,7 @@ public class Quiz {
 			
 			first = false;
 		} 
-		
+		console.nextInt();
 
 		
 
@@ -178,7 +178,7 @@ public class Quiz {
 			System.out.println();
 
 			System.out.println(" please enter 1, 2, 3, or 4");
-			if (console.hasNextInt()) {
+			if (console.hasNext() && console.hasNextInt()) {
 				answer = console.nextInt();
 			} 
 				console.nextLine();
@@ -222,7 +222,7 @@ public class Quiz {
 			System.out.println();
 			System.out.println(" please enter 1, 2, 3, or 4");
 
-			if (console.hasNextInt()) {
+			if (console.hasNext() && console.hasNextInt()) {
 				answer = console.nextInt();
 			} 
 				console.nextLine();
@@ -281,3 +281,11 @@ public class Quiz {
 		}
 	}
 }
+System.out.println("What do you do when you listen to music?");
+
+System.out.println("1. Whistle to myself  " + "2. Hum to myself  "
+		+ "3. Snap my fingers   " + "4. Tap rhymthms on surface  ");
+
+System.out.println();
+
+System.out.println(" please enter 1, 2, 3, or 4");

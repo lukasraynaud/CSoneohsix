@@ -73,9 +73,9 @@ public class Quiz {
 			System.out.println(" please enter 1, 2, 3, or 4");
 			if (console.hasNextInt()) {
 				answer = console.nextInt();
-			}
+			} else {
 				console.nextLine();
-			
+			}
 			first = false;
 		}
 
@@ -109,10 +109,8 @@ public class Quiz {
 
 		int answer = 0;
 		boolean first = true;
-		
 
 		while (answer <= 0 || answer > 4) {
-			
 			if (!first) {
 				System.out.println("Try again Dinugs");
 				System.out.println("   ");
@@ -129,14 +127,11 @@ public class Quiz {
 
 			if  (console.hasNextInt()) {
 				answer = console.nextInt();
-			} 
+			} else {
 				console.nextLine();
-			
+			}
 			first = false;
-		} 
-		
-
-		
+		}
 
 		if (answer == 1) {
 			sax++;
@@ -153,7 +148,7 @@ public class Quiz {
 
 		question3(console, sax, trumpet, bass, drums);
 
-		
+		console.close();
 
 	}
 
@@ -178,11 +173,11 @@ public class Quiz {
 			System.out.println();
 
 			System.out.println(" please enter 1, 2, 3, or 4");
-			if (console.hasNextInt()) {
+			if (console.hasNext() && console.hasNextInt()) {
 				answer = console.nextInt();
-			} 
+			} else {
 				console.nextLine();
-			
+			}
 			first = false;
 		}
 
@@ -198,7 +193,7 @@ public class Quiz {
 
 		question4(console, sax, trumpet, bass, drums);
 
-		
+		console.close();
 	}
 
 	// asks final question, tallies parameters, and checks for largest
@@ -222,11 +217,11 @@ public class Quiz {
 			System.out.println();
 			System.out.println(" please enter 1, 2, 3, or 4");
 
-			if (console.hasNextInt()) {
+			if (console.hasNext() && console.hasNextInt()) {
 				answer = console.nextInt();
-			} 
+			} else {
 				console.nextLine();
-			
+			}
 			first = false;
 		}
 

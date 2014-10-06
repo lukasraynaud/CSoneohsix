@@ -134,7 +134,7 @@ public class Quiz {
 			
 			first = false;
 		} 
-		
+		console.nextInt();
 
 		
 

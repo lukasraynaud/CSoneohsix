@@ -104,56 +104,40 @@ public class Quiz {
 
 	// process repeats itself for next questions //
 
-	public static void question2(Scanner console, int sax, int trumpet,
-			int bass, int drums) {
+	public static void question2(Scanner console, int sax, int trumpet, int bass, int drums) {
 
 		int answer = 0;
 		boolean first = true;
-		
 
 		while (answer <= 0 || answer > 4) {
-			
 			if (!first) {
-				System.out.println("Try again Dinugs");
-				System.out.println("   ");
-			}
+				System.out.println("What do you do when you listen to music?");
 
-			System.out.println("What do you do when you listen to music?");
+				System.out.println("1. Whistle to myself  " + "2. Hum to myself  "
+						+ "3. Snap my fingers   " + "4. Tap rhymthms on surface  ");
 
-			System.out.println("1. Whistle to myself  " + "2. Hum to myself  "
-					+ "3. Snap my fingers   " + "4. Tap rhymthms on surface  ");
+				System.out.println();
 
-			System.out.println();
-
-			System.out.println(" please enter 1, 2, 3, or 4");
-
-			if  (console.hasNextInt()) {
+				System.out.println(" please enter 1, 2, 3, or 4");
+			if (console.hasNext() && console.hasNextInt()) {
 				answer = console.nextInt();
 			} 
 				console.nextLine();
 			
 			first = false;
-		} 
-		
-
-		
+		}
 
 		if (answer == 1) {
 			sax++;
-		}
-		if (answer == 2) {
+		} else if (answer == 2) {
 			trumpet++;
-		}
-		if (answer == 3) {
+		} else if (answer == 3) {
 			bass++;
-		}
-		if (answer == 4) {
+		} else if (answer == 4) {
 			drums++;
 		}
 
-		question3(console, sax, trumpet, bass, drums);
-
-		
+		question4(console, sax, trumpet, bass, drums);
 
 	}
 
@@ -178,7 +162,7 @@ public class Quiz {
 			System.out.println();
 
 			System.out.println(" please enter 1, 2, 3, or 4");
-			if (console.hasNextInt()) {
+			if (console.hasNext() && console.hasNextInt()) {
 				answer = console.nextInt();
 			} 
 				console.nextLine();
@@ -222,7 +206,7 @@ public class Quiz {
 			System.out.println();
 			System.out.println(" please enter 1, 2, 3, or 4");
 
-			if (console.hasNextInt()) {
+			if (console.hasNext() && console.hasNextInt()) {
 				answer = console.nextInt();
 			} 
 				console.nextLine();
