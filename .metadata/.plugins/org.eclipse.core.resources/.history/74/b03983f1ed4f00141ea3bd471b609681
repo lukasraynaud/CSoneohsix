@@ -1,0 +1,37 @@
+/**
+ * 
+ */
+
+/**
+ * @author lraynaud
+ *
+ */
+
+import java.io.*;
+import java.util.*;
+
+public class TextFiles {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) throws FileNotFoundException {
+
+		Scanner fileReader = new Scanner(new File("src/input.txt"));
+
+		String sr1 	= new String("Yo");
+		String sr2 = "Yoyoma";
+		System.out.println(sr1 + sr2);
+		
+		
+		while (fileReader.hasNext()){
+		System.out.println(fileReader.nextLine());
+	
+       
+
+			}
+		fileReader.close();	
+}
+}
+
+

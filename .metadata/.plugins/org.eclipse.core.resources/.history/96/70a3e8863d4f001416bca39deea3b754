@@ -1,0 +1,31 @@
+/**
+ * 
+ */
+
+/**
+ * @author lraynaud
+ *
+ */
+
+import java.io.*;
+import java.util.*;
+
+
+public class TextFiles {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) throws FileNotFoundException{
+	
+		Scanner fileReader = new Scanner (new File("src/input.txt"));
+		
+		
+		double balance = 0;
+		while(fileReader.hasNextInt()){ balance += fileReader.nextInt();
+		} System.out.println("total balance: $" + balance);
+		
+		fileReader.close();
+	}
+
+}

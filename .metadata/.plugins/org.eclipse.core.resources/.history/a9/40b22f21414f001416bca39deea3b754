@@ -1,0 +1,48 @@
+/**
+ * 
+ */
+
+/**
+ * @author lraynaud
+ *
+ */
+
+import java.io.*;
+import java.util.*;
+
+
+public class TextFiles {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) throws FileNotFoundException{
+	
+		Scanner fileReader = new Scanner (new File("src/input.txt"));
+		
+		while(fileReader.hasNext()){
+			
+			System.out.println(fileReader.next());
+		}
+		
+		
+		
+		double CheckingBalance = 0;
+		 
+			
+			while(fileReader.hasNextDouble()){
+				CheckingBalance +=fileReader.nextDouble();
+			}
+			System.out.println("Checking Balance: $ " + CheckingBalance);
+			
+			
+		
+		 }
+	}
+
+
+
+
+	
+
+
