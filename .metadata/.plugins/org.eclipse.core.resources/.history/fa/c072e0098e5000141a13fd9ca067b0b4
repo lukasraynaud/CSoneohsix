@@ -53,7 +53,6 @@ public class TextFiles {
 	output.println("Checking Balance =  $" + checkingAccount);
 	output.println("Savings Balance =  $" + savingsAccount);
 	output.println("Credit Card Balance =  $" + creditCardAccount);
-	output.println("You're not poor!");
 	
 	output.close();
 	

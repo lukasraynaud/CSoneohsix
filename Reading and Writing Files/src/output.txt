@@ -1,0 +1,4 @@
+Checking Balance =  $667.4
+Savings Balance =  $1200.0
+Credit Card Balance =  $744.23
+You're not poor!
