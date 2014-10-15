@@ -1,0 +1,73 @@
+/** Program to Calculate Account Balances from Text File
+ * 
+ */
+
+/**
+ * @author lraynaud
+
+ *
+ */
+// import appropriate utilities // 
+import java.io.*;
+import java.util.*;
+
+public class TextFiles {
+
+	/**
+	 * @param args
+	 * Main Class
+	 */
+	
+	// Main Method Establishes Balance Variables, Scans File, and Outputs Results to New File//
+	public static void main(String[] args) throws FileNotFoundException {
+
+		
+		// set variables for account balances starting at 0//
+		double checkingAccount = 0;
+		double savingsAccount = 0;
+		double creditCardAccount = 0;
+
+		// create new scanner for reading file from src folder //
+		Scanner fileReader = new Scanner(new File("src/input.txt"));
+		
+		// create new printstream for writing output file to src folder //
+		PrintStream output = new PrintStream(new File("src/output.txt"));
+
+		
+		// create while loop to read through entire text file, as long as there are additional tokens //
+		while (fileReader.hasNext()) {
+			fileReader.next();
+			String type = fileReader.next();
+			if (type.equals("Credit")) {
+				type += fileReader.next();
+			}
+			String action = fileReader.next();
+			if (action.equals("Opening")) {
+				action += fileReader.next();
+			}
+			double dollar = fileReader.nextDouble();
+			if (action.equals("Withdrawal")) {
+				dollar *= -1;
+			}
+			if(type.equals("Checking")){
+				checkingAccount += dollar;
+			}
+			else if(type.equals("Savings")){
+				savingsAccount += dollar;
+			}
+			else{
+				creditCardAccount += dollar;
+			}
+
+		}
+		// print calculated balances to new output file //
+		output.println("Checking Balance =  $" + checkingAccount);
+		output.println("Savings Balance =  $" + savingsAccount);
+		output.println("Credit Card Balance =  $" + creditCardAccount);
+		output.println("You're not poor!");
+
+		output.close();
+
+
+	}
+}
