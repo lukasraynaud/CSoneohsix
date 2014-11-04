@@ -1,0 +1,42 @@
+
+public class Filereader {
+	
+	
+	private double number;
+	private String name;
+	private double hp;
+	private double attack;
+	private double defense;
+	private double sattack;
+	private double sdefense;
+	private double speed;
+	private double total;
+	private double average;
+	
+
+public Filereader (double initNumber, String initName, double initHP, double initAttack, double initDefense, double initSAttack, double initSDefense, double initSpeed, double initTotal, double initAverage){
+	
+	//Set Variables//
+	
+	this.number = initNumber;
+	this.name = initName;
+	this.hp = initHP;
+	this.attack = initAttack;
+	this.defense = initDefense;
+	this.sattack = initSAttack;
+	this.sdefense = initSDefense;
+	this.speed = initSpeed;
+	this.total = initTotal;
+	this.average = initAverage;
+	
+			
+}
+	
+double [] stats = new double [150];
+
+
+
+
+	
+}
+	

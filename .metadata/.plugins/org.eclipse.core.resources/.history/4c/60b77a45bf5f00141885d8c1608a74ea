@@ -1,0 +1,36 @@
+
+public class Pokemon {
+
+	private double id;
+	private String name;
+	private double hp;
+	private double attack;
+	private double defense;
+	private double sattack;
+	private double sdefense;
+	private double speed;
+	private double total;
+	private double average;
+
+	public Pokemon (double id, String name, double hp, double attack, double defense, double sattack, double sdefense, double speed, double total, double average) {
+	
+	this.id = id;
+	this.name.equals(name);
+	this.hp = hp;
+	this.attack = attack;
+	this.defense = defense;
+	this.sattack = sattack;
+	this.sdefense = sdefense;
+	this.speed = speed;
+	this.total = total;
+	this.average = average;
+	
+	System.out.println(id);
+	
+	
+	
+	
+	}
+	
+}
+
