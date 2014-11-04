@@ -1,0 +1,23 @@
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+/**
+ * A program to find the Highest stats for the first generation of pokemon
+ * @author lraynaud
+ *
+ */
+
+public class Main {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		// TODO Auto-generated method stub
+
+	 Filereader f = new Filereader();
+	 	
+	
+		
+		
+		
+	}
+
+}
