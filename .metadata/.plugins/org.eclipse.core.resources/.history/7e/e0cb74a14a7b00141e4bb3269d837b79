@@ -1,0 +1,20 @@
+package finalprojectdraft;
+
+public class player {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	System.out.println("Welcome to the Samuel L. Jackson Sound Board ");
+	System.out.println("Please select a movie you would like to choose from");
+	System.out.println("Pulp Fiction		press \"p\"");
+	System.out.println("Rules of Engagement		press \"r\"");
+	System.out.println("The Avengers		press \"a\"");
+	
+	
+	}
+
+}
+
+
+// http://www.moviesoundclips.net/people-details.php?id=23 // 

@@ -1,0 +1,31 @@
+package finalprojectdraft;
+
+import java.util.Scanner;
+
+public class player {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	System.out.println("Welcome to the Samuel L. Jackson Sound Board. ");
+	System.out.println("Please select a movie you would like to choose from.");
+	System.out.println("");
+	System.out.println("Pulp Fiction				press \"p\"");
+	System.out.println("Rules of Engagement			press \"r\"");
+	System.out.println("The Avengers				press \"a\"");
+	System.out.println("");
+	System.out.println("\\/");
+	
+	
+	
+	Scanner console = new Scanner(System.in);
+	
+	String moviechoice = console.next();
+	
+	
+	}
+
+}
+
+
+// http://www.moviesoundclips.net/people-details.php?id=23 // 

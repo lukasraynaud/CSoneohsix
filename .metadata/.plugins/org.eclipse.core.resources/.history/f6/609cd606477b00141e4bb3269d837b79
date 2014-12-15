@@ -1,0 +1,19 @@
+import java.util.*;
+public class arraysort {
+	
+	public static void main(String[] args) {
+	
+	int[] array = new int[10];
+	Random rand = new Random();
+	int i = 0;
+	for (int i1 = 0; i < array.length; i++)
+	    array[i] = rand.nextInt(100) + 1;
+	Arrays.sort(array);
+	System.out.println(Arrays.toString(array));
+	// in reverse order
+	
+	
+
+}
+
+}
