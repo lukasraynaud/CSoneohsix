@@ -1,14 +1,2 @@
 INDEX VERSION 1.126+/students/home/lraynaud/CSoneohsix/.metadata/.plugins/org.eclipse.jdt.core
-283643304.index
-1312861531.index
-2766134696.index
-2265567524.index
-39610031.index
-1626097179.index
-890357654.index
-820019804.index
-1454947716.index
-1072328130.index
-2399275230.index
-3815936609.index
-4004684347.index
+1010274121.index

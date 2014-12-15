@@ -21,7 +21,7 @@ import java.util.*;
 
 
 
-public class Playwav 
+public class playwav 
 {
 
 	
@@ -30,7 +30,7 @@ public class Playwav
 	 */
 	
 	
-	public Playwav()
+	public playwav()
 	{
 
 		try { 
@@ -75,7 +75,7 @@ public class Playwav
 
 		
 		
-		// calls movie prompt class to open scanner //
+		// calls movie prompt class to open scanenr //
 		movieprompt();
 
 	}		
